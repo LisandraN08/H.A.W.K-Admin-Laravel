@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css" />
+
+    <title>My Profile</title>
+
+    <!-- favicon -->
+    <link href="../assets/images/favicon (3).ico" rel="icon" class="favIcon" />
+
+    <style>
+        .card:hover {
+            background-image: linear-gradient(to right, #5969ff, #717fe0);
+        color: white;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+      <!-- ============================================================== -->
+      <!-- navbar -->
+      <!-- ============================================================== -->
+      <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+          <a style="color: black" class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="width: 50px; height: 50px" />H.A.W.K Admin</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right-top">
+              <li class="nav-item">
+                <div id="custom-search" class="top-search-bar">
+                  <input class="form-control" type="text" placeholder="Search.." />
+                </div>
+              </li>
+              <li class="nav-item dropdown notification">
+                <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
+                <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                  <li>
+                    <div class="notification-title">Notification</div>
+                    <div class="notification-list">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                          <div class="notification-info">
+                            <div class="notification-list-user-img"><img src="assets/images/ready-stock.png" alt="" class="user-avatar-md rounded-circle" /></div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name">Bryan</span>had just restocked!
+                              <div class="notification-date">2 min ago</div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="notification-info">
+                            <div class="notification-list-user-img"><img src="assets/images/cust.png" alt="" class="user-avatar-md rounded-circle" /></div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name">New customer alert!</span>
+                              <div class="notification-date">10 min ago</div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="notification-info">
+                            <div class="notification-list-user-img"><img src="assets/images/shopping-bag.png" alt="" class="user-avatar-md rounded-circle" /></div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name">New order is made!</span>
+                              <div class="notification-date">2 days ago</div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="notification-info">
+                            <div class="notification-list-user-img"><img src="assets/images/ready-stock.png" alt="" class="user-avatar-md rounded-circle" /></div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name">Dana</span>had just restocked!
+                              <div class="notification-date">10 days ago</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-footer" style="background-image: linear-gradient(to right, #000000, #1a1a1a)"><a href="#">View all notifications</a></div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown nav-user">
+                <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  ><img src="assets/images/user(3).png" alt="" class="user-avatar-md rounded-circle"
+                /></a>
+                <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                  <div class="nav-user-info" style="background-image: linear-gradient(to right, #000000, #1a1a1a)">
+                    <h5 class="mb-0 text-white nav-user-name">Winnie</h5>
+                    <span class="status"></span><span class="ml-2">Owner</span>
+                  </div>
+                  <a class="dropdown-item" href="my-profile.html"><i class="fas fa-user mr-2"></i>My profile</a>
+                  <a class="dropdown-item" href="pages/login.html"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- ============================================================== -->
+      <!-- end navbar -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- left sidebar -->
+      <!-- ============================================================== -->
+      <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="d-xl-none d-lg-none" href="index.html">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav flex-column">
+                <li class="nav-divider">Menu</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle" href="index.html"></i>Dashboard <span class="badge badge-success">6</span></a>
+                  <div id="submenu-1" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
+                        <div id="submenu-1-2" class="collapse submenu">
+                          <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link">H.A.W.K Dashboard</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-table"></i>Table</a>
+                  <div id="submenu-2" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="categoryTable.html">Category <span class="badge badge-secondary">New</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="categoryTable.html">Category <span class="badge badge-secondary">New</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="shipperTable.html">Shipper</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="staffTable.html">Staff</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="productTable.html">Product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="orderTable.html">Order</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="orderDetailTable.html">Order Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-archive"></i>Inventory</a>
+                  <div id="submenu-3" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="Restock.html">Input Stock</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/availability.html">Availability</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fas fa-fw fa-calendar-alt"></i>Schedule</a>
+                  <div id="submenu-4" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/sortable-nestable-lists.html">To-do List</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+
+
+                <li class="nav-divider">Others</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-comments"></i>Social Media </a>
+                  <div id="submenu-6" class="collapse submenu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/404-page.html">Instagram</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/404-page.html">Facebook</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/404-page.html">Linkedin</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/404-page.html">Whatsapp Group</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item active">
+                  <a class="nav-link active" href="my-profile.html" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-user"></i>My Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-liqnk" href="pages/login.html" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-fw fa-sign-out-alt"></i>Logout</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- ============================================================== -->
+      <!-- end left sidebar -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- wrapper  -->
+      <!-- ============================================================== -->
+      <div class="dashboard-wrapper">
+        <div class="influence-profile">
+          <div class="container-fluid dashboard-content">
+            <!-- ============================================================== -->
+            <!-- pageheader -->
+            <!-- ============================================================== -->
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                  <h3 class="mb-2">My Profile</h3>
+                  <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                  <div class="page-breadcrumb">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end pageheader -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- content -->
+            <!-- ============================================================== -->
+            <div class="row">
+              <!-- ============================================================== -->
+              <!-- profile -->
+              <!-- ============================================================== -->
+              <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 col-12">
+                <!-- ============================================================== -->
+                <!-- card profile -->
+                <!-- ============================================================== -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="user-avatar text-center d-block"></div>
+                    <div class="text-center">
+                      <h2 class="font-24 mb-0">Winnie</h2>
+                      <p>Owner @H.A.W.K</p>
+                    </div>
+                  </div>
+                  <div class="card-body border-top">
+                    <h3 class="font-16">Contact Information</h3>
+                    <div class="">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>winnie123@gmail.com</li>
+                        <li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>081665783421</li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-66" style="margin-top: 95px; size: 180%;">
+                        <img src="assets/images/logo.png">
+                    </div>
+
+                        
+                  
+                  </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end card profile -->
+                <!-- ============================================================== -->
+              </div>
+              <!-- ============================================================== -->
+              <!-- end profile -->
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- campaign data -->
+              <!-- ============================================================== -->
+              <div class="col-xl-9 col-lg-9 col-md-7 col-sm-12 col-12">
+                <!-- ============================================================== -->
+                <!-- campaign tab one -->
+                <!-- ============================================================== -->
+                <div class="influence-profile-content pills-regular">
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab">
+                      <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="section-block">
+                            <h3 class="section-title">My Stats</h3>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <h1 class="mb-1">22</h1>
+                              <p>Tot. Stocks allocated</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <h1 class="mb-1">8</h1>
+                              <p>Products allocated</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <h1 class="mb-1">12</h1>
+                              <p>Staff Allocation Frequency</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <h1 class="mb-1">15</h1>
+                              <p>Days of Attendance</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <h3 class="section-title pb-2">Change password</h3>
+                        <form class="container mx-0">
+
+                                    <div class="form-group">
+                                        <input class="form-control form-control-lg" type="email" name="email" required="" placeholder="E-mail" autocomplete="off">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control form-control-lg" id="pass1" type="password" required="" placeholder="Old Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control form-control-lg" required="" placeholder="New Password">
+                                    </div>
+                                    <div class="form-group pt-2">
+                                        <button class="btn btn-block btn-primary" style="background-image: linear-gradient(to right, #5969ff, #717fe0);" type="submit">Renew password</button>
+                         
+                   
+                        </form>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end campaign tab one -->
+                <!-- ============================================================== -->
+              </div>
+              <!-- ============================================================== -->
+              <!-- end campaign data -->
+              <!-- ============================================================== -->
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end content -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- end footer -->
+        <!-- ============================================================== -->
+      </div>
+      <!-- ============================================================== -->
+      <!-- end wrapper -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1  -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="assets/libs/js/main-js.js"></script>
+  </body>
+</html>
