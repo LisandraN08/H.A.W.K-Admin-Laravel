@@ -52,3 +52,5 @@ Route::get('/Restock.html', function () {
 Route::get('/my-profile.html', function () {
     return view('FrontEnd.my-profile');
 });
+
+Route::get('/', 'App\Http\Controllers\AdminController@showDB');

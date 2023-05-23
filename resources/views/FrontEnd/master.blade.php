@@ -345,69 +345,36 @@
                     <h5 class="card-header">Recent Orders</h5>
                     <div class="card-body p-0">
                       <div class="table-responsive">
-                        <table class="table">
-                          <thead class="bg-light">
-                            <tr class="border-0">
-                              <th class="border-0">#</th>
-                              <th class="border-0">Product Name</th>
-                              <th class="border-0">Quantity</th>
-                              <th class="border-0">Price</th>
-                              <th class="border-0">Total price</th>
-                              <th class="border-0">Order Time</th>
-                              <th class="border-0">Customer</th>
-                              <th class="border-0">Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-
-                              <td>Coach HC5149T 9004 s56</td>
-                              <td>3</td>
-                              <td>Rp 2.584.000</td>
-                              <td>Rp 7.752.000</td>
-                              <td>2023-04-23 18:00:00</td>
-                              <td>Grace Wijaya</td>
-                              <td><span class="badge-dot badge-brand mr-1"></span>On-process</td>
-                            </tr>
-                            <tr>
-                              <td>2</td>
-
-                              <td>Tommy Hilfiger F TH 0090 J5G 52</td>
-                              <td>1</td>
-                              <td>Rp 2.100.000</td>
-                              <td>Rp 2.100.000</td>
-                              <td>2023-04-19 23:00:00</td>
-                              <td>Mia Gracia</td>
-                              <td><span class="badge-dot badge-success mr-1"></span>Delivered</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-
-                              <td>Guess F GE 2783 021 54</td>
-                              <td>1</td>
-                              <td>Rp 1.940.000</td>
-                              <td>Rp 1.940.000</td>
-                              <td>2023-04-12 17:00:00</td>
-                              <td>Nurul Hidiyati</td>
-                              <td><span class="badge-dot badge-success mr-1"></span>Delivered</td>
-                            </tr>
-                            <tr>
-                              <td>4</td>
-
-                              <td>Gucci F GU K 1357OJ 004 48</td>
-                              <td>1</td>
-                              <td>Rp 10.370.000</td>
-                              <td>Rp 10.370.000</td>
-                              <td>2023-04-14 14:00:00</td>
-                              <td>Yuli R.</td>
-                              <td><span class="badge-dot badge-success mr-1"></span>Delivered</td>
-                            </tr>
-                            <tr>
-                              <td colspan="9"><a href="#" class="btn btn-primary btn-outline-light float-right mt-2">View Details</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <table class="table">
+                        <thead class="bg-light">
+                          <tr class="border-0">
+                            <th class="border-0">Product Name</th>
+                            <th class="border-0">Price</th>
+                            <th class="border-0">Quantity</th>
+                            <th class="border-0">Total Price</th>
+                            <th class="border-0">Order Created</th>
+                            <th class="border-0">Customer Name</th>
+                            <th class="border-0">Order Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          @foreach($orders as $order)
+                              <tr>
+                                  <td>{{ $order->product_name }}</td>
+                                  <td>{{ $order->price }}</td>
+                                  <td>{{ $order->quantity }}</td>
+                                  <td>{{ $order->total_price }}</td>
+                                  <td>{{ $order->order_Detail_created }}</td>
+                                  <td>{{ $order->customer_name }}</td>
+                                  @if ($order->order_status == 'In Progress')
+                                      <td><span class="badge-dot badge-brand mr-1"></span>On-process</td>
+                                  @else
+                                      <td><span class="badge-dot badge-success mr-1"></span>Delivered</td>
+                                  @endif
+                              </tr>
+                          @endforeach
+                      </tbody>
+                      </table>
                       </div>
                     </div>
                   </div>
